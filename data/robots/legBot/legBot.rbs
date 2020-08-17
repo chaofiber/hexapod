@@ -1,0 +1,752 @@
+
+RB
+	name rb0
+	mass 1.076000
+	moi 0.016513 0.018816 0.002535 0.000000 0.000000 0.000000
+	position 0.000000 -0.018392 -0.019436
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/BodyMesh.obj
+	mesh robots/legBot/meshes/3DP-smallMotorPlate.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh1.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	mesh robots/legBot/meshes/3DP-smallMotorPlate.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh12.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	mesh robots/legBot/meshes/3DP-smallMotorPlate.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh23.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	mesh robots/legBot/meshes/3DP-smallMotorPlate.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh34.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription skeleton
+	meshDescription skeleton
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 -0.000000 0.018392 0.019436
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.047650 0.018392 0.123129
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.026454 0.006030 0.123129
+	meshTransformation -0.500000 0.500000 0.500000 0.500000 0.053259 -0.003832 0.123129
+	meshTransformation -0.500000 0.500000 0.500000 0.500000 0.053259 -0.003832 0.123129
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 -0.047650 0.018392 0.123129
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 -0.026454 0.006030 0.123129
+	meshTransformation 0.500000 -0.500000 0.500000 0.500000 -0.053259 -0.003832 0.123129
+	meshTransformation 0.500000 -0.500000 0.500000 0.500000 -0.053259 -0.003832 0.123129
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.047650 0.018392 -0.123129
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.026454 0.006030 -0.123129
+	meshTransformation -0.500000 0.500000 0.500000 0.500000 0.053259 -0.003832 -0.123129
+	meshTransformation -0.500000 0.500000 0.500000 0.500000 0.053259 -0.003832 -0.123129
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 -0.047650 0.018392 -0.123129
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 -0.026454 0.006030 -0.123129
+	meshTransformation 0.500000 -0.500000 0.500000 0.500000 -0.053259 -0.003832 -0.123129
+	meshTransformation 0.500000 -0.500000 0.500000 0.500000 -0.053259 -0.003832 -0.123129
+	mappingInfo -1 -1
+	CDP Box -0.078259 -0.028832 -0.148128 0.078259 0.021168 0.148128
+/End_RB
+
+
+RB
+	name rb1
+	mass 0.259000
+	moi 0.000090 0.000044 0.000095 0.000015 0.000000 -0.000000
+	position 0.090328 -0.024627 0.103670
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh2.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh3.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation -0.500000 0.500000 0.500000 0.500000 -0.037069 0.002403 0.000023
+	meshTransformation -0.500000 0.500000 0.500000 0.500000 -0.037069 0.002403 0.000023
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 -0.006117 0.020462 0.000009
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 0.002834 -0.009479 -0.000004
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 0.002834 -0.009479 -0.000004
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb2
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 0.000000 0.000000 0.000000
+	position 0.093162 -0.057103 0.103666
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh4.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh5.obj
+	mesh robots/legBot/meshes/LivingBracketMesh6.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 0.000000 0.022997 -0.000000
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 0.000000 0.022997 -0.000000
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000
+	meshTransformation 0.683012 -0.183013 0.683013 -0.183012 0.000000 -0.022997 -0.000000
+	meshTransformation 0.683012 -0.183013 0.683013 -0.183012 0.000000 -0.022997 -0.000000
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb3
+	mass 0.436000
+	moi 0.001401 0.000395 0.001066 0.000000 -0.000000 0.000581
+	position 0.093162 -0.133398 0.134437
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh7.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.683012 -0.183013 0.683013 -0.183012 -0.000000 0.053297 -0.030771
+	meshTransformation 0.683012 -0.183013 0.683013 -0.183012 -0.000000 0.053297 -0.030771
+	meshTransformation 1.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000
+	meshTransformation -0.183013 -0.683012 0.183012 0.683013 0.000000 -0.053297 0.030771
+	meshTransformation -0.183013 -0.683012 0.183012 0.683013 0.000000 -0.053297 0.030771
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb4
+	mass 0.132000
+	moi 0.000144 0.000067 0.000117 0.000000 0.000000 -0.000046
+	position 0.093162 -0.265952 0.118758
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh8.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh9.obj
+	mesh robots/legBot/meshes/3DP-PointEE_small.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription skeleton
+	meshTransformation -0.183013 -0.683012 0.183012 0.683013 -0.000000 0.079257 0.046449
+	meshTransformation -0.183013 -0.683012 0.183012 0.683013 -0.000000 0.079257 0.046449
+	meshTransformation 1.000000 -0.000000 0.000000 -0.000000 -0.000000 0.018919 0.011112
+	meshTransformation 0.683012 0.183013 0.683013 0.183013 0.000000 -0.031027 -0.018224
+	endEffector 0.000000 -0.039687 -0.023224 0.001000 0 0.000000 0.000000 0.000000 -1
+	mappingInfo 0 10
+	CDP Sphere 0.000000 -0.039687 -0.023224 0.010000
+/End_RB
+
+
+RB
+	name rb5
+	mass 0.259000
+	moi 0.000090 0.000044 0.000095 -0.000015 -0.000000 -0.000000
+	position -0.090328 -0.024627 0.103670
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh13.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh14.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.500000 -0.500000 0.500000 0.500000 0.037069 0.002403 0.000023
+	meshTransformation 0.500000 -0.500000 0.500000 0.500000 0.037069 0.002403 0.000023
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.006117 0.020462 0.000009
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 -0.002834 -0.009479 -0.000004
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 -0.002834 -0.009479 -0.000004
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb6
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 0.000000 0.000000 0.000000
+	position -0.093162 -0.057103 0.103666
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh15.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh16.obj
+	mesh robots/legBot/meshes/LivingBracketMesh17.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 -0.000000 0.022997 -0.000000
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 -0.000000 0.022997 -0.000000
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+	meshTransformation 0.683012 -0.183013 -0.683013 0.183012 -0.000000 -0.022997 -0.000000
+	meshTransformation 0.683012 -0.183013 -0.683013 0.183012 -0.000000 -0.022997 -0.000000
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb7
+	mass 0.436000
+	moi 0.001401 0.000395 0.001066 -0.000000 0.000000 0.000581
+	position -0.093162 -0.133398 0.134437
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh18.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.683012 -0.183013 -0.683013 0.183012 0.000000 0.053297 -0.030771
+	meshTransformation 0.683012 -0.183013 -0.683013 0.183012 0.000000 0.053297 -0.030771
+	meshTransformation 1.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000
+	meshTransformation 0.183013 0.683012 0.183012 0.683013 -0.000000 -0.053297 0.030771
+	meshTransformation 0.183013 0.683012 0.183012 0.683013 -0.000000 -0.053297 0.030771
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb8
+	mass 0.132000
+	moi 0.000144 0.000067 0.000117 -0.000000 -0.000000 -0.000046
+	position -0.093162 -0.265952 0.118758
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh19.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh20.obj
+	mesh robots/legBot/meshes/3DP-PointEE_small.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription skeleton
+	meshTransformation 0.183013 0.683012 0.183012 0.683013 0.000000 0.079257 0.046449
+	meshTransformation 0.183013 0.683012 0.183012 0.683013 0.000000 0.079257 0.046449
+	meshTransformation 1.000000 -0.000000 -0.000000 0.000000 0.000000 0.018919 0.011112
+	meshTransformation 0.683012 0.183013 -0.683013 -0.183013 -0.000000 -0.031027 -0.018224
+	endEffector -0.000000 -0.039687 -0.023224 0.001000 0 0.000000 0.000000 0.000000 -1
+	mappingInfo 1 10
+	CDP Sphere -0.000000 -0.039687 -0.023224 0.010000
+/End_RB
+
+
+RB
+	name rb9
+	mass 0.259000
+	moi 0.000090 0.000044 0.000095 0.000015 0.000000 -0.000000
+	position 0.090328 -0.024627 -0.142587
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh24.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh25.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation -0.500000 0.500000 0.500000 0.500000 -0.037069 0.002403 0.000023
+	meshTransformation -0.500000 0.500000 0.500000 0.500000 -0.037069 0.002403 0.000023
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 -0.006117 0.020462 0.000009
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 0.002834 -0.009479 -0.000004
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 0.002834 -0.009479 -0.000004
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb10
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 0.000000 0.000000 0.000000
+	position 0.093162 -0.057103 -0.142591
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh26.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh27.obj
+	mesh robots/legBot/meshes/LivingBracketMesh28.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 0.000000 0.022997 -0.000000
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 0.000000 0.022997 -0.000000
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+	meshTransformation 0.683012 -0.183013 0.683013 -0.183012 0.000000 -0.022997 -0.000000
+	meshTransformation 0.683012 -0.183013 0.683013 -0.183012 0.000000 -0.022997 -0.000000
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb11
+	mass 0.436000
+	moi 0.001401 0.000395 0.001066 0.000000 -0.000000 0.000581
+	position 0.093162 -0.133398 -0.111821
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh29.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.683012 -0.183013 0.683013 -0.183012 -0.000000 0.053297 -0.030770
+	meshTransformation 0.683012 -0.183013 0.683013 -0.183012 -0.000000 0.053297 -0.030770
+	meshTransformation 1.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000 0.000000
+	meshTransformation -0.183013 -0.683012 0.183012 0.683013 0.000000 -0.053297 0.030770
+	meshTransformation -0.183013 -0.683012 0.183012 0.683013 0.000000 -0.053297 0.030770
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb12
+	mass 0.132000
+	moi 0.000144 0.000067 0.000117 -0.000000 -0.000000 -0.000046
+	position 0.093162 -0.265952 -0.127500
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh30.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh31.obj
+	mesh robots/legBot/meshes/3DP-PointEE_small.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription skeleton
+	meshTransformation -0.183013 -0.683012 0.183012 0.683013 0.000000 0.079257 0.046449
+	meshTransformation -0.183013 -0.683012 0.183012 0.683013 0.000000 0.079257 0.046449
+	meshTransformation 1.000000 -0.000000 0.000000 -0.000000 0.000000 0.018919 0.011112
+	meshTransformation 0.683012 0.183013 0.683013 0.183013 -0.000000 -0.031027 -0.018224
+	endEffector -0.000000 -0.039687 -0.023224 0.001000 0 0.000000 0.000000 0.000000 -1
+	mappingInfo 2 10
+	CDP Sphere -0.000000 -0.039687 -0.023224 0.010000
+/End_RB
+
+
+RB
+	name rb13
+	mass 0.259000
+	moi 0.000090 0.000044 0.000095 -0.000015 -0.000000 -0.000000
+	position -0.090328 -0.024627 -0.142587
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh35.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh36.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.500000 -0.500000 0.500000 0.500000 0.037069 0.002403 0.000023
+	meshTransformation 0.500000 -0.500000 0.500000 0.500000 0.037069 0.002403 0.000023
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.006117 0.020462 0.000009
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 -0.002834 -0.009479 -0.000004
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 -0.002834 -0.009479 -0.000004
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb14
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 0.000000 0.000000 0.000000
+	position -0.093162 -0.057103 -0.142591
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh37.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh38.obj
+	mesh robots/legBot/meshes/LivingBracketMesh39.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 -0.000000 0.022997 -0.000000
+	meshTransformation 0.000000 1.000000 0.000000 0.000000 -0.000000 0.022997 -0.000000
+	meshTransformation 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+	meshTransformation 0.683012 -0.183013 -0.683013 0.183012 -0.000000 -0.022997 -0.000000
+	meshTransformation 0.683012 -0.183013 -0.683013 0.183012 -0.000000 -0.022997 -0.000000
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb15
+	mass 0.436000
+	moi 0.001401 0.000395 0.001066 -0.000000 0.000000 0.000581
+	position -0.093162 -0.133398 -0.111821
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh40.obj
+	mesh robots/legBot/meshes/XM-540_parent.obj
+	mesh robots/legBot/meshes/XM-540_bodyBracket.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription motor
+	meshDescription motor
+	meshTransformation 0.683012 -0.183013 -0.683013 0.183012 0.000000 0.053297 -0.030770
+	meshTransformation 0.683012 -0.183013 -0.683013 0.183012 0.000000 0.053297 -0.030770
+	meshTransformation 1.000000 -0.000000 -0.000000 0.000000 -0.000000 0.000000 0.000000
+	meshTransformation 0.183013 0.683012 0.183012 0.683013 -0.000000 -0.053297 0.030770
+	meshTransformation 0.183013 0.683012 0.183012 0.683013 -0.000000 -0.053297 0.030770
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rb16
+	mass 0.132000
+	moi 0.000144 0.000067 0.000117 0.000000 0.000000 -0.000046
+	position -0.093162 -0.265952 -0.127500
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.030000
+	mesh robots/legBot/meshes/LivingBracketMesh41.obj
+	mesh robots/legBot/meshes/XM-540_child.obj
+	mesh robots/legBot/meshes/LivingConnectorMesh42.obj
+	mesh robots/legBot/meshes/3DP-PointEE_small.obj
+	meshDescription motor
+	meshDescription motor
+	meshDescription skeleton
+	meshDescription skeleton
+	meshTransformation 0.183013 0.683012 0.183012 0.683013 -0.000000 0.079257 0.046449
+	meshTransformation 0.183013 0.683012 0.183012 0.683013 -0.000000 0.079257 0.046449
+	meshTransformation 1.000000 -0.000000 -0.000000 0.000000 -0.000000 0.018919 0.011112
+	meshTransformation 0.683012 0.183013 -0.683013 -0.183013 0.000000 -0.031027 -0.018224
+	endEffector 0.000000 -0.039687 -0.023224 0.001000 0 0.000000 0.000000 0.000000 -1
+	mappingInfo 3 10
+	CDP Sphere 0.000000 -0.039687 -0.023224 0.010000
+/End_RB
+
+
+	RBJoint
+		jointAxis 0.000000 1.000000 0.000000
+		motorID -1
+		defaultAngle 0.000000
+		mappingInfo 0 2
+		name rb0_rb1
+		parent rb0
+		child rb1
+		jointCPos -0.037069 0.002403 0.000023
+		jointPPos 0.053259 -0.003832 0.123129
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 -1.000000
+		motorID -1
+		defaultAngle 0.000000
+		mappingInfo 0 4
+		name rb1_rb2
+		parent rb1
+		child rb2
+		jointCPos 0.000000 0.022997 -0.000000
+		jointPPos 0.002834 -0.009479 -0.000004
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 1.000000 0.000001 -0.000002
+		motorID -1
+		defaultAngle -0.000000
+		mappingInfo 0 6
+		name rb2_rb3
+		parent rb2
+		child rb3
+		jointCPos -0.000000 0.053297 -0.030771
+		jointPPos 0.000000 -0.022997 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 -0.000001 0.000001
+		motorID -1
+		defaultAngle 0.000000
+		mappingInfo 0 8
+		name rb3_rb4
+		parent rb3
+		child rb4
+		jointCPos -0.000000 0.079257 0.046449
+		jointPPos 0.000000 -0.053297 0.030771
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 1.000000 0.000000
+		motorID -1
+		defaultAngle -0.000000
+		mappingInfo 1 2
+		name rb0_rb5
+		parent rb0
+		child rb5
+		jointCPos 0.037069 0.002403 0.000023
+		jointPPos -0.053259 -0.003832 0.123129
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 -1.000000
+		motorID -1
+		defaultAngle -0.000000
+		mappingInfo 1 4
+		name rb5_rb6
+		parent rb5
+		child rb6
+		jointCPos -0.000000 0.022997 -0.000000
+		jointPPos -0.002834 -0.009479 -0.000004
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000001 -0.000002
+		motorID -1
+		defaultAngle 0.000000
+		mappingInfo 1 6
+		name rb6_rb7
+		parent rb6
+		child rb7
+		jointCPos 0.000000 0.053297 -0.030771
+		jointPPos -0.000000 -0.022997 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 1.000000 -0.000001 0.000001
+		motorID -1
+		defaultAngle -0.000000
+		mappingInfo 1 8
+		name rb7_rb8
+		parent rb7
+		child rb8
+		jointCPos 0.000000 0.079257 0.046449
+		jointPPos -0.000000 -0.053297 0.030771
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 1.000000 0.000000
+		motorID -1
+		defaultAngle 0.000000
+		mappingInfo 2 2
+		name rb0_rb9
+		parent rb0
+		child rb9
+		jointCPos -0.037069 0.002403 0.000023
+		jointPPos 0.053259 -0.003832 -0.123129
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 -1.000000
+		motorID -1
+		defaultAngle 0.000000
+		mappingInfo 2 4
+		name rb9_rb10
+		parent rb9
+		child rb10
+		jointCPos 0.000000 0.022997 -0.000000
+		jointPPos 0.002834 -0.009479 -0.000004
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 1.000000 0.000001 -0.000002
+		motorID -1
+		defaultAngle -0.000000
+		mappingInfo 2 6
+		name rb10_rb11
+		parent rb10
+		child rb11
+		jointCPos -0.000000 0.053297 -0.030770
+		jointPPos 0.000000 -0.022997 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 -0.000001 0.000001
+		motorID -1
+		defaultAngle 0.000000
+		mappingInfo 2 8
+		name rb11_rb12
+		parent rb11
+		child rb12
+		jointCPos 0.000000 0.079257 0.046449
+		jointPPos 0.000000 -0.053297 0.030770
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 1.000000 0.000000
+		motorID -1
+		defaultAngle -0.000000
+		mappingInfo 3 2
+		name rb0_rb13
+		parent rb0
+		child rb13
+		jointCPos 0.037069 0.002403 0.000023
+		jointPPos -0.053259 -0.003832 -0.123129
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 -1.000000
+		motorID -1
+		defaultAngle -0.000000
+		mappingInfo 3 4
+		name rb13_rb14
+		parent rb13
+		child rb14
+		jointCPos -0.000000 0.022997 -0.000000
+		jointPPos -0.002834 -0.009479 -0.000004
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000001 -0.000002
+		motorID -1
+		defaultAngle 0.000000
+		mappingInfo 3 6
+		name rb14_rb15
+		parent rb14
+		child rb15
+		jointCPos 0.000000 0.053297 -0.030770
+		jointPPos -0.000000 -0.022997 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 1.000000 -0.000001 0.000001
+		motorID -1
+		defaultAngle -0.000000
+		mappingInfo 3 8
+		name rb15_rb16
+		parent rb15
+		child rb16
+		jointCPos -0.000000 0.079257 0.046449
+		jointPPos -0.000000 -0.053297 0.030770
+	/End_Joint
+
+

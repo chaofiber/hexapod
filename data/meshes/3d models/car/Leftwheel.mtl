@@ -1,0 +1,47 @@
+newmtl Futuristic_Car_001
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Futuristic_Car_C.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Futuristic_Car_S.jpg
+Ns 96.08
+newmtl Futuristic_Car_001_Speed_Car_A_1_png_001
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Futuristic_Car_C.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Futuristic_Car_S.jpg
+Ns 96.08
+newmtl Futuristic_Car_001_untitled_000
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Futuristic_Car_S.jpg
+Ns 96.08
+newmtl Futuristic_Car_black_001
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Futuristic_Car_S.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 96.08
+newmtl Futuristic_Car_glass_001
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.13 0.13 0.13
+map_Kd Futuristic_Car_N.jpg
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 750.00

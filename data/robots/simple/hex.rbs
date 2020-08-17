@@ -1,0 +1,389 @@
+RB
+	name rb0
+	mass 1.044000
+	moi 0.003180 0.004815 0.001930 0.000000 0.000000 -0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+
+	collisionSphere -0.055000 -0 0.065000 0.001000	
+	collisionSphere 0.055000 -0 -0.065000 0.001000	
+	collisionSphere 0.055000 -0 0.065000 0.001000	
+	collisionSphere -0.055000 -0 -0.065000 0.001000	
+
+/End_RB
+
+
+RB
+	name rb1
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb2
+	mass 0.164000
+	moi 0.000040 0.000155 0.000155 0.000000 0.000000 -0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb3
+	mass 0.214000
+	moi 0.000060 0.000684 0.000684 -0.000000 -0.000000 -0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	endEffector -0.09 -0.000000 -0.000000 0.001000 0 0.000000 0.000000 0.000000 -1
+	collisionSphere -0.09 -0.000000 -0.000000 0.001000
+	collisionSphere 0.065000 0.000000 0.000000 0.001000
+/End_RB
+
+RB
+	name rb4
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 -0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb5
+	mass 0.164000
+	moi 0.000040 0.000155 0.000155 -0.000000 -0.000000 -0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb6
+	mass 0.214000
+	moi 0.000060 0.000684 0.000684 0.000000 0.000000 -0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	endEffector 0.09 -0.000000 -0.000000 0.001000 0 0.000000 0.000000 0.000000 -1
+	collisionSphere 0.09 -0.000000 -0.000000 0.001000
+	collisionSphere -0.065000 0.000000 0.000000 0.001000	
+/End_RB
+
+
+RB
+	name rb7
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb8
+	mass 0.164000
+	moi 0.000040 0.000155 0.000155 -0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb9
+	mass 0.214000
+	moi 0.000060 0.000684 0.000684 -0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	endEffector 0.09 0.000000 -0.000000 0.001000 0 0.000000 0.000000 0.000000 -1
+	collisionSphere 0.09 0.000000 -0.000000 0.001000
+	collisionSphere -0.065000 0.000000 0.000000 0.001000	
+/End_RB
+
+
+RB
+	name rb10
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb11
+	mass 0.164000
+	moi 0.000040 0.000155 0.000155 0.000000 -0.000000 0.000000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb12
+	mass 0.214000
+	moi 0.000060 0.000684 0.000684 0.000000 -0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	endEffector -0.09 0.000000 -0.000000 0.001000 0 0.000000 0.000000 0.000000 -1
+	collisionSphere -0.09 0.000000 -0.000000 0.001000
+	collisionSphere 0.065000 0.000000 0.000000 0.001000	
+/End_RB
+
+
+RB
+	name rb13
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 0.000000 0.000000 0.000000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb14
+	mass 0.164000
+	moi 0.000040 0.000155 0.000155 0.000000 0.000000 -0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb15
+	mass 0.214000
+	moi 0.000060 0.000684 0.000684 0.000000 -0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	endEffector -0.09 0.000000 -0.000000 0.001000 0 0.000000 0.000000 0.000000 -1
+	collisionSphere -0.09 0.000000 -0.000000 0.001000
+	collisionSphere 0.065000 0.000000 0.000000 0.001000	
+/End_RB
+
+
+RB
+	name rb16
+	mass 0.082000
+	moi 0.000020 0.000020 0.000020 -0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+
+RB
+	name rb17
+	mass 0.164000
+	moi 0.000040 0.000155 0.000155 -0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+/End_RB
+
+RB
+	name rb18
+	mass 0.214000
+	moi 0.000060 0.000684 0.000684 -0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	endEffector 0.09 0.000000 -0.000000 0.001000 0 0.000000 0.000000 0.000000 -1
+	collisionSphere 0.09 0.000000 -0.000000 0.001000
+	collisionSphere -0.065000 0.000000 0.000000 0.001000	
+/End_RB
+
+
+	RBJoint
+		jointAxis 0.000000 -1.000000 0.000000
+		defaultAngle -0.698132
+		name rb0_rb1
+		parent rb0
+		child rb1
+		jointCPos 0.025000 -0.000000 0.000000
+		jointPPos -0.055000 -0 0.065000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -0.000001 0.000000 -1.000000
+		defaultAngle 0.349066
+		name rb1_rb2
+		parent rb1
+		child rb2
+		jointCPos 0.025000 -0.000000 -0.000000
+		jointPPos -0.025000 -0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000001 0.000000 -1.000000
+		defaultAngle -1.570796
+		name rb2_rb3
+		parent rb2
+		child rb3
+		jointCPos 0.065000 0.000000 0.000000
+		jointPPos -0.063500 0.000000 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 -1.000000 0.000000
+		defaultAngle 0.698132
+		name rb0_rb4
+		parent rb0
+		child rb4
+		jointCPos -0.025000 -0.000000 0.000000
+		jointPPos 0.055000 -0 0.065000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000001 0.000000 -1.000000
+		defaultAngle -0.349066
+		name rb4_rb5
+		parent rb4
+		child rb5
+		jointCPos -0.025000 -0.000000 -0.000000
+		jointPPos 0.025000 -0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -0.000001 0.000000 -1.000000
+		defaultAngle 1.570796
+		name rb5_rb6
+		parent rb5
+		child rb6
+		jointCPos -0.065000 0.000000 0.000000
+		jointPPos 0.063500 0.000000 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 -1.000000 0.000000
+		defaultAngle 0.000000
+		name rb0_rb7
+		parent rb0
+		child rb7
+		jointCPos -0.025000 0.000000 0.000000
+		jointPPos 0.055000 -0 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 -0.000000 -1.000000
+		defaultAngle -0.349066
+		name rb7_rb8
+		parent rb7
+		child rb8
+		jointCPos -0.025000 -0.000000 0.000000
+		jointPPos 0.025000 0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -0.000000 0.000000 -1.000000
+		defaultAngle 1.570796
+		name rb8_rb9
+		parent rb8
+		child rb9
+		jointCPos -0.065000 -0.000000 0.000000
+		jointPPos 0.063500 0.000000 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 -1.000000 0.000000
+		defaultAngle -0.000000
+		name rb0_rb10
+		parent rb0
+		child rb10
+		jointCPos 0.025000 0.000000 0.000000
+		jointPPos -0.055000 -0 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 -1.000000
+		defaultAngle 0.349066
+		name rb10_rb11
+		parent rb10
+		child rb11
+		jointCPos 0.025000 -0.000000 0.000000
+		jointPPos -0.025000 0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 -1.000000
+		defaultAngle -1.570796
+		name rb11_rb12
+		parent rb11
+		child rb12
+		jointCPos 0.065000 -0.000000 0.000000
+		jointPPos -0.063500 0.000000 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 -1.000000 0.000000
+		defaultAngle 0.698132
+		name rb0_rb13
+		parent rb0
+		child rb13
+		jointCPos 0.025000 0.000000 0.000000
+		jointPPos -0.055000 -0 -0.065000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 -0.000000 -1.000000
+		defaultAngle 0.349066
+		name rb13_rb14
+		parent rb13
+		child rb14
+		jointCPos 0.025000 -0.000000 -0.000000
+		jointPPos -0.025000 0.000000 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 -1.000000
+		defaultAngle -1.570796
+		name rb14_rb15
+		parent rb14
+		child rb15
+		jointCPos 0.065000 -0.000000 0.000000
+		jointPPos -0.063500 0.000000 -0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 -1.000000 0.000000
+		defaultAngle -0.698132
+		name rb0_rb16
+		parent rb0
+		child rb16
+		jointCPos -0.025000 0.000000 -0.000000
+		jointPPos 0.055000 -0 -0.065000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -0.000000 -0.000000 -1.000000
+		defaultAngle -0.349066
+		name rb16_rb17
+		parent rb16
+		child rb17
+		jointCPos -0.025000 -0.000000 0.000000
+		jointPPos 0.025000 0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -0.000000 0.000000 -1.000000
+		defaultAngle 1.570796
+		name rb17_rb18
+		parent rb17
+		child rb18
+		jointCPos -0.065000 -0.000000 0.000000
+		jointPPos 0.063500 0.000000 -0.000000
+	/End_Joint
+
+

@@ -1,0 +1,347 @@
+RB 
+	name base
+
+	mesh robots/spot/meshes/base.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.9 0.9 0.1 1.0
+
+	mesh robots/kinovaGen3/meshes/base_link.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 0.3 0.08 0.0
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+RB 
+	name shoulder
+	mesh robots/kinovaGen3/meshes/shoulder_link.obj
+	meshTransformation 0.70711 0.70711 0.0 0.0 0.0 0.0
+	meshDescription shoulder
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1.0 0.0
+		name base_shoulder
+		parent base
+		child shoulder
+		jointCPos 0.0 0.0 0.0
+		#jointPPos 0 0.15643 0
+		jointPPos 0.3 0.23643 0
+	/End_Joint
+
+RB 
+	name halfArm1
+	mesh robots/kinovaGen3/meshes/half_arm_1_link.obj
+	meshTransformation 0.0 1.0 0.0 0.0 0.0 0.0
+	meshDescription halfArm1
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 0.0 1.0
+		name shoulder_halfArm1
+		parent shoulder
+		child halfArm1
+		jointCPos 0 0 0
+		jointPPos 0 0.12838 0.005375
+	/End_Joint
+
+RB 
+	name halfArm2
+	mesh robots/kinovaGen3/meshes/half_arm_2_link.obj
+	meshTransformation 0.70711 0.70711 0.0 0.0 0.0 0.0
+	meshDescription halfArm2
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1.0 0.0
+		name halfArm1_halfArm2
+		parent halfArm1
+		child halfArm2
+		jointCPos 0 0 0
+		jointPPos 0.0 0.21038 0.006375
+	/End_Joint
+
+
+RB 
+	name foreArm
+	mesh robots/kinovaGen3/meshes/forearm_link.obj
+	meshTransformation 0.0 1.0 0.0 0.0 0.0 0.0
+	meshDescription foreArm
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 0.0 1.0
+		name halfArm2_foreArm
+		parent halfArm2
+		child foreArm
+		jointCPos 0 0 0
+		jointPPos 0.0 0.21038 0.006375
+	/End_Joint
+
+RB 
+	name sphericalWrist1
+	mesh robots/kinovaGen3/meshes/spherical_wrist_1_link.obj
+	meshTransformation 0.70711 0.70711 0.0 0.0 0.0 0.0
+	meshDescription sphericalWrist1
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1.0 0.0
+		name foreArm_sphericalWrist1
+		parent foreArm
+		child sphericalWrist1
+		jointCPos 0 0 0
+		jointPPos 0.0 0.20843 0.006375
+	/End_Joint
+
+RB 
+	name sphericalWrist2
+	mesh robots/kinovaGen3/meshes/spherical_wrist_2_link.obj
+	meshTransformation 0.0 1.0 0.0 0.0 0.0 0.0
+	meshDescription sphericalWrist2
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 0.0 1.0
+		name sphericalWrist1_sphericalWrist2
+		parent sphericalWrist1
+		child sphericalWrist2
+		jointCPos 0 0 0
+		jointPPos 0.0 0.10593 0.00017505
+	/End_Joint
+
+RB 
+	name bracelet
+	mesh robots/kinovaGen3/meshes/bracelet_link.obj
+
+	meshTransformation 0.70711 0.70711 0.0 0.0 0.0 0.0
+	meshDescription bracelet
+	meshColor 0.75294 0.75294 0.75294 1.0
+
+	mesh robots/ur5e/meshes/Gripper-2F85-Offen.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 0.064 0.0
+	meshDescription gripper
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1.0 0.0
+		name sphericalWrist2_bracelet
+		parent sphericalWrist2
+		child bracelet
+		jointCPos 0 0 0
+		jointPPos 0.0 0.10593 0.00017505
+	/End_Joint
+
+
+
+
+RB 
+	name fl_hip
+	mesh robots/spot/meshes/fl_hip.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.2 0.2 0.2 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 1 0 0
+		jointLimits -0.795809 0.771781
+		name fl_hx
+		parent base
+		child fl_hip
+		jointCPos 0 0 0
+		jointPPos 0.29785 0.00000 -0.05500
+	/End_Joint
+
+RB 
+	name fl_uleg
+	mesh robots/spot/meshes/fl_uleg.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.9 0.9 0.1 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 -1
+		jointLimits -0.884415 2.25643
+		name fl_hy
+		parent fl_hip
+		child fl_uleg
+		jointCPos 0 0 0
+		jointPPos 0.0 0.0 -0.110945
+	/End_Joint
+
+RB 
+	name fl_lleg
+	mesh robots/spot/meshes/fl_lleg.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.2 0.2 0.2 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 -1
+		jointLimits -2.80048 -0.254499
+		name fl_kn
+		parent fl_uleg
+		child fl_lleg
+		jointCPos 0 0 0
+		jointPPos 0.025 -0.3205 0.0
+	/End_Joint
+
+
+RB 
+	name fr_hip
+	mesh robots/spot/meshes/fr_hip.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.2 0.2 0.2 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 1 0 0
+		jointLimits -0.795652 0.775481
+		name fr_hx
+		parent base
+		child fr_hip
+		jointCPos 0 0 0
+		jointPPos 0.29785 0.00000 0.05500
+	/End_Joint
+
+RB 
+	name fr_uleg
+	mesh robots/spot/meshes/fr_uleg.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.9 0.9 0.1 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 -1
+		jointLimits -0.875177 2.26364
+		name fr_hy
+		parent fr_hip
+		child fr_uleg
+		jointCPos 0 0 0
+		jointPPos 0.0 0.0 0.110945
+	/End_Joint
+
+RB 
+	name fr_lleg
+	mesh robots/spot/meshes/fr_lleg.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.2 0.2 0.2 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 -1
+		jointLimits -2.78665 -0.265022
+		name fr_kn
+		parent fr_uleg
+		child fr_lleg
+		jointCPos 0 0 0
+		jointPPos 0.025 -0.3205 0.0
+	/End_Joint
+
+
+RB 
+	name hl_hip
+	mesh robots/spot/meshes/hl_hip.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.2 0.2 0.2 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 1 0 0
+		jointLimits -0.792071 0.782738
+		name hl_hx
+		parent base
+		child hl_hip
+		jointCPos 0 0 0
+		jointPPos -0.29785 0.00000 -0.05500
+	/End_Joint
+
+RB 
+	name hl_uleg
+	mesh robots/spot/meshes/hl_uleg.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.9 0.9 0.1 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 -1
+		jointLimits -0.872792 2.26816
+		name hl_hy
+		parent hl_hip
+		child hl_uleg
+		jointCPos 0 0 0
+		jointPPos 0.0 0.0 -0.110945
+	/End_Joint
+
+RB 
+	name hl_lleg
+	mesh robots/spot/meshes/hl_lleg.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.2 0.2 0.2 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 -1
+		jointLimits -2.78589 -0.258655
+		name hl_kn
+		parent hl_uleg
+		child hl_lleg
+		jointCPos 0 0 0
+		jointPPos 0.025 -0.3205 0.0
+	/End_Joint
+
+
+RB 
+	name hr_hip
+	mesh robots/spot/meshes/hr_hip.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.2 0.2 0.2 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 1 0 0
+		jointLimits -0.801439 0.770271
+		name hr_hx
+		parent base
+		child hr_hip
+		jointCPos 0 0 0
+		jointPPos -0.29785 0.00000 0.05500
+	/End_Joint
+
+RB 
+	name hr_uleg
+	mesh robots/spot/meshes/hr_uleg.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.9 0.9 0.1 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 -1
+		jointLimits -0.876258 2.26026
+		name hr_hy
+		parent hr_hip
+		child hr_uleg
+		jointCPos 0 0 0
+		jointPPos 0.0 0.0 0.110945
+	/End_Joint
+
+RB 
+	name hr_lleg
+	mesh robots/spot/meshes/hr_lleg.obj
+	meshTransformation 0.7071068 -0.7071068 0.0 0.0 0.0 0.0 0.0
+	meshColor 0.2 0.2 0.2 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 -1
+		jointLimits -2.79596 -0.245637
+		name hr_kn
+		parent hr_uleg
+		child hr_lleg
+		jointCPos 0 0 0
+		jointPPos 0.025 -0.3205 0.0
+	/End_Joint

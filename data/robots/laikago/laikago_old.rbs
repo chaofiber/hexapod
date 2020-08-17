@@ -1,0 +1,257 @@
+
+RB
+	name base
+	mass 13.549000
+	moi 0.240348 0.251978 0.064897 0.000000 0.000000 0.000000
+	mesh robots/laikago/meshes/laikago_trunk_low.obj 
+/End_RB
+
+
+RB
+	name hip_0
+	mass 1.096000
+	moi 0.000983 0.000865 0.000822 0.000000 0.000000 0.000000
+/End_RB
+
+
+RB
+	name hip_1
+	mass 1.096000
+	moi 0.000983 0.000865 0.000822 0.000000 0.000000 0.000000
+/End_RB
+
+
+RB
+	name hip_2
+	mass 1.096000
+	moi 0.000983 0.000865 0.000822 0.000000 0.000000 0.000000
+/End_RB
+
+
+RB
+	name hip_3
+	mass 1.096000
+	moi 0.000983 0.000865 0.000822 0.000000 0.000000 0.000000
+/End_RB
+
+
+RB
+	name thigh_0
+	mass 1.528000
+	moi 0.009280 0.001783 0.009916 0.000000 0.000000 0.000000
+	mesh robots/laikago/meshes/laikago_thigh_left.obj 
+	meshTransformation 0.0000   0.0    1.0000    0.0 0.0 0.125000 -0.0 
+/End_RB
+
+
+RB
+	name thigh_1
+	mass 1.528000
+	moi 0.009280 0.001783 0.009916 0.000000 0.000000 0.000000
+	mesh robots/laikago/meshes/laikago_thigh_left.obj 
+	meshTransformation 0.0000   0.0    1.0000    0.0 0.0 0.125000 -0.0 
+/End_RB
+
+
+RB
+	name thigh_2
+	mass 1.528000
+	moi 0.009280 0.001783 0.009916 0.000000 0.000000 0.000000
+	mesh robots/laikago/meshes/laikago_thigh_right.obj 
+	meshTransformation 0.0000   0.0    1.0000    0.0 0.0 0.125000 -0.0 
+/End_RB
+
+
+RB
+	name thigh_3
+	mass 1.528000
+	moi 0.009280 0.001783 0.009916 0.000000 0.000000 0.000000
+	mesh robots/laikago/meshes/laikago_thigh_right.obj 
+	meshTransformation 0.0000   0.0    1.0000    0.0 0.0 0.125000 -0.0 
+/End_RB
+
+
+RB
+	name tibia_0
+	mass 0.241000
+	moi 0.002197 0.0001 0.002182 0.000000 0.000000 0.000000
+	collisionSphere 0.000000 -0.125000 0.000000 0.001
+	mesh robots/laikago/meshes/laikago_calf.obj 
+	meshTransformation 0.0000   0.0    1.0000    0.0 0.0 0.125000 -0.0 
+/End_RB
+
+
+RB
+	name tibia_1
+	mass 0.241000
+	moi 0.002197 0.0001 0.002182 0.000000 0.000000 0.000000
+	collisionSphere 0.000000 -0.125000 0.000000 0.001
+	mesh robots/laikago/meshes/laikago_calf.obj 
+	meshTransformation 0.0000   0.0    1.0000    0.0 0.0 0.125000 -0.0 
+/End_RB
+
+
+RB
+	name tibia_2
+	mass 0.241000
+	moi 0.002197 0.0001 0.002182 0.000000 0.000000 0.000000
+	collisionSphere 0.000000 -0.125000 0.000000 0.001
+	mesh robots/laikago/meshes/laikago_calf.obj 
+	meshTransformation 0.0000   0.0    1.0000    0.0 0.0 0.125000 -0.0 
+/End_RB
+
+
+RB
+	name tibia_3
+	mass 0.241000
+	moi 0.002197 0.0001 0.002182 0.000000 0.000000 0.000000
+	collisionSphere 0.000000 -0.125000 0.000000 0.001
+	mesh robots/laikago/meshes/laikago_calf.obj 
+	meshTransformation 0.0000   0.0    1.0000    0.0 0.0 0.125000 -0.0 
+/End_RB
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 1.000000
+		defaultAngle 0.000000
+		jointLimits -0.7 0.7
+		name base_hip_0
+		parent base
+		child hip_0
+		jointCPos -0.037000 0.000000 0.000000
+		jointPPos 0.047500 -0.016750 0.219350
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 1.000000
+		defaultAngle 0.000000
+		jointLimits -0.7 0.7
+		name base_hip_1
+		parent base
+		child hip_1
+		jointCPos -0.037000 0.000000 0.000000
+		jointPPos 0.047500 -0.016750 -0.219350
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 1.000000
+		defaultAngle 0.000000
+		jointLimits -0.7 0.7
+		name base_hip_2
+		parent base
+		child hip_2
+		jointCPos 0.037000 0.000000 0.000000
+		jointPPos -0.047500 -0.016750 0.219350
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 1.000000
+		defaultAngle 0.000000
+		jointLimits -0.7 0.7
+		name base_hip_3
+		parent base
+		child hip_3
+		jointCPos 0.037000 0.000000 0.000000
+		jointPPos -0.047500 -0.016750 -0.219350
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000000 0.000000
+		defaultAngle 0.000000
+		jointLimits -1.5 1.5
+		name hip_0_thigh_0
+		parent hip_0
+		child thigh_0
+		jointCPos 0.000000 0.125000 0.000000
+		jointPPos 0.037000 0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000000 0.000000
+		defaultAngle 0.000000
+		jointLimits -1.5 1.5
+		name hip_1_thigh_1
+		parent hip_1
+		child thigh_1
+		jointCPos 0.000000 0.125000 0.000000
+		jointPPos 0.037000 0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000000 0.000000
+		defaultAngle 0.000000
+		jointLimits -1.5 1.5
+		name hip_2_thigh_2
+		parent hip_2
+		child thigh_2
+		jointCPos 0.000000 0.125000 0.000000
+		jointPPos -0.037000 0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000000 0.000000
+		defaultAngle 0.000000
+		jointLimits -1.5 1.5
+		name hip_3_thigh_3
+		parent hip_3
+		child thigh_3
+		jointCPos 0.000000 0.125000 0.000000
+		jointPPos -0.037000 0.000000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000000 0.000000
+		defaultAngle 0.000000
+		jointLimits 0 2.7
+		name thigh_0_tibia_0
+		parent thigh_0
+		child tibia_0
+		jointCPos 0.000000 0.125000 0.000000
+		jointPPos 0.000000 -0.125000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000000 0.000000
+		defaultAngle 0.000000
+		jointLimits 0 2.7
+		name thigh_1_tibia_1
+		parent thigh_1
+		child tibia_1
+		jointCPos 0.000000 0.125000 0.000000
+		jointPPos 0.000000 -0.125000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000000 0.000000
+		defaultAngle 0.000000
+		jointLimits 0 2.7
+		name thigh_2_tibia_2
+		parent thigh_2
+		child tibia_2
+		jointCPos 0.000000 0.125000 0.000000
+		jointPPos 0.000000 -0.125000 0.000000
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 0.000000 0.000000
+		defaultAngle 0.000000
+		jointLimits 0 2.7
+		name thigh_3_tibia_3
+		parent thigh_3
+		child tibia_3
+		jointCPos 0.000000 0.125000 0.000000
+		jointPPos 0.000000 -0.125000 0.000000
+	/End_Joint
+
+

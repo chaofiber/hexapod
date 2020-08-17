@@ -1,0 +1,133 @@
+RB 
+	name base
+	mesh robots/kinovaGen3/meshes/base_link.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 0.0 0.0 0.0
+	meshDescription base
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+RB 
+	name shoulder
+	mesh robots/kinovaGen3/meshes/shoulder_link.obj
+	meshTransformation 0.70711 0.70711 0.0 0.0 0.0 0.0
+	meshDescription shoulder
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1.0 0.0
+		name base_shoulder
+		parent base
+		child shoulder
+		jointCPos 0 0 0
+		jointPPos 0 0.15643 0
+	/End_Joint
+
+RB 
+	name halfArm1
+	mesh robots/kinovaGen3/meshes/half_arm_1_link.obj
+	meshTransformation 0.0 1.0 0.0 0.0 0.0 0.0
+	meshDescription halfArm1
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 0.0 1.0
+		name shoulder_halfArm1
+		parent shoulder
+		child halfArm1
+		jointCPos 0 0 0
+		jointPPos 0 0.12838 0.005375
+	/End_Joint
+
+RB 
+	name halfArm2
+	mesh robots/kinovaGen3/meshes/half_arm_2_link.obj
+	meshTransformation 0.70711 0.70711 0.0 0.0 0.0 0.0
+	meshDescription halfArm2
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1.0 0.0
+		name halfArm1_halfArm2
+		parent halfArm1
+		child halfArm2
+		jointCPos 0 0 0
+		jointPPos 0.0 0.21038 0.006375
+	/End_Joint
+
+
+RB 
+	name foreArm
+	mesh robots/kinovaGen3/meshes/forearm_link.obj
+	meshTransformation 0.0 1.0 0.0 0.0 0.0 0.0
+	meshDescription foreArm
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 0.0 1.0
+		name halfArm2_foreArm
+		parent halfArm2
+		child foreArm
+		jointCPos 0 0 0
+		jointPPos 0.0 0.21038 0.006375
+	/End_Joint
+
+RB 
+	name sphericalWrist1
+	mesh robots/kinovaGen3/meshes/spherical_wrist_1_link.obj
+	meshTransformation 0.70711 0.70711 0.0 0.0 0.0 0.0
+	meshDescription sphericalWrist1
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1.0 0.0
+		name foreArm_sphericalWrist1
+		parent foreArm
+		child sphericalWrist1
+		jointCPos 0 0 0
+		jointPPos 0.0 0.20843 0.006375
+	/End_Joint
+
+RB 
+	name sphericalWrist2
+	mesh robots/kinovaGen3/meshes/spherical_wrist_2_link.obj
+	meshTransformation 0.0 1.0 0.0 0.0 0.0 0.0
+	meshDescription sphericalWrist2
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 0.0 1.0
+		name sphericalWrist1_sphericalWrist2
+		parent sphericalWrist1
+		child sphericalWrist2
+		jointCPos 0 0 0
+		jointPPos 0.0 0.10593 0.00017505
+	/End_Joint
+
+RB 
+	name bracelet
+
+	mesh robots/kinovaGen3/meshes/bracelet_link.obj
+	meshTransformation 0.70711 0.70711 0.0 0.0 0.0 0.0
+	meshDescription bracelet
+	meshColor 0.75294 0.75294 0.75294 1.0
+
+	mesh robots/ur5e/meshes/Gripper-2F85-Offen.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 0.064 0.0
+	meshDescription gripper
+	meshColor 0.75294 0.75294 0.75294 1.0
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1.0 0.0
+		name sphericalWrist2_bracelet
+		parent sphericalWrist2
+		child bracelet
+		jointCPos 0 0 0
+		jointPPos 0.0 0.10593 0.00017505
+	/End_Joint

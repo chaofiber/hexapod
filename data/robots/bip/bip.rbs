@@ -1,0 +1,732 @@
+RB
+	name pelvis
+	mass 8.352
+	moi 0.015536 0.035968 0.039424 0 0 0
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/pelvis.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0 -0.009184 -0.014936	
+#	CDP Box -0.102874 -0.053159 -0.062258 0.102874 0.089576 0.042315
+/End_RB
+
+
+RB
+	name rUpperLeg1
+	mass 2.624
+	moi 0.0008 0.0009 0.001024 0 -0.000000 -0.000000
+	position -0.109292 -0.031990 0.032289
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rUpperLeg1.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.109292 0.031990 -0.032251
+/End_RB
+
+
+RB
+	name rUpperLeg2
+	mass 3.5
+	moi 0.007 0.005 0.007 0 0 0
+	position -0.112819 -0.131346 0.030186
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rUpperLeg2.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.112819 0.131346 -0.030148
+#	CDP Capsule 0 0.02 0 0 0.05 0 0.075
+/End_RB
+
+
+RB
+	name rUpperLeg3
+	mass 4.1
+	moi 0.03 0.005 0.03 0.000 0 0
+	position -0.111414 -0.358780 0.033416
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rUpperLeg3.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.111414 0.358780 -0.033378
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.02 0 0 0.12 0 0.075	
+/End_RB
+
+
+RB
+	name rLowerLeg
+	mass 4.1
+	moi 0.04 0.004 0.04 0 0 -0.005
+	position -0.102726 -0.740092 -0.005360
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rLowerLeg.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.102725 0.740092 0.005398
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.05 0 0 0.25 0.03 0.05000		
+/End_RB
+
+
+RB
+	name rFoot1
+	mass 2.624
+	moi 0.0008 0.0009 0.001024 0 -0.000000 -0.000000
+	position -0.101947 -0.862271 -0.020641
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rFoot1.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.101946 0.862270 0.020678
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.005 0 0 0.005 0.0 0.025000		
+/End_RB
+
+
+RB
+	name rFoot2
+	mass 2
+	moi 0.011 0.0115 0.002 0 0 0
+	position -0.105329 -0.935001 0.002079
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rFoot2.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.105210 0.932431 -0.001983
+	endEffector -0.045 -0.05 -0.077 0.010000
+	endEffector -0.045 -0.05 0.168 0.010000
+	endEffector 0.045 -0.05 -0.077 0.010000
+	endEffector 0.045 -0.05 0.168 0.010000
+	mappingInfo 0 18
+	
+	CDP Box -0.045 -0.05 -0.077 0.045 0.02 0.168
+	
+#	CDP Sphere -0.035 -0.05 -0.077 0.010000
+#	CDP Sphere -0.035 -0.05 0.168 0.010000
+#	CDP Sphere 0.035 -0.05 -0.077 0.010000
+#	CDP Sphere 0.035 -0.05 0.168 0.010000
+/End_RB
+
+
+RB
+	name lUpperLeg1
+	mass 2.624
+	moi 0.0008 0.0009 0.001024 0 -0.000000 -0.000000
+	position 0.109292 -0.031990 0.032289
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lUpperLeg1.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 -0.109292 0.031990 -0.032251
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name lUpperLeg2
+	mass 3.5
+	moi 0.007 0.005 0.007 0 0 0
+	position 0.112819 -0.131346 0.030186
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lUpperLeg2.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 -0.112819 0.131346 -0.030148
+	mappingInfo -1 -1
+	CDP Capsule 0 0.02 0 0 0.05 0 0.075	
+/End_RB
+
+
+RB
+	name lUpperLeg3
+	mass 4.1
+	moi 0.03 0.005 0.03 0.000 0 0
+	position 0.111414 -0.358780 0.033416
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lUpperLeg3.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 -0.111414 0.358780 -0.033378
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.02 0 0 0.12 0 0.075		
+/End_RB
+
+
+RB
+	name lLowerLeg
+	mass 4.1
+	moi 0.04 0.004 0.04 0 0 -0.005
+	position 0.102726 -0.740092 -0.005360
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lLowerLeg.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 -0.102725 0.740092 0.005398
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.05 0 0 0.25 0.03 0.05000		
+/End_RB
+
+
+RB
+	name lFoot1
+	mass 2.624
+	moi 0.0008 0.0009 0.001024 0 -0.000000 -0.000000
+	position 0.101947 -0.862271 -0.020641
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lFoot1.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 -0.101946 0.862270 0.020678
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.005 0 0 0.005 0.0 0.025000		
+/End_RB
+
+
+RB
+	name lFoot2
+	mass 2
+	moi 0.011 0.0115 0.002 0 0 0
+	position 0.105211 -0.932431 0.002021
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lFoot2.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 -0.105210 0.932431 -0.001983
+	endEffector -0.045 -0.05 -0.077 0.010000
+	endEffector -0.045 -0.05 0.168 0.010000
+	endEffector 0.045 -0.05 -0.077 0.010000
+	endEffector 0.045 -0.05 0.168 0.010000
+	CDP Box -0.045 -0.05 -0.077 0.045 0.02 0.168
+#	CDP Sphere -0.035 -0.05 -0.077 0.010000
+#	CDP Sphere -0.035 -0.05 0.168 0.010000
+#	CDP Sphere 0.035 -0.05 -0.077 0.010000
+#	CDP Sphere 0.035 -0.05 0.168 0.010000
+	mappingInfo 1 16
+/End_RB
+
+
+RB
+	name lowerBack1
+	mass 2.46
+	moi 0.003 0.002 0.003 0 0 0
+	position -0.000000 0.109260 -0.026305
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lowerBack1.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.000000 -0.109260 0.022322
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.02 0 0 0.02 0 0.05		
+/End_RB
+
+
+RB
+	name lowerBack2
+	mass 2.46
+	moi 0.004 0.002 0.004 0 0 0
+	position -0.000000 0.231395 -0.016886
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lowerBack2.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.000000 -0.231395 0.012903
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.02 0 0 0.02 0 0.05		
+/End_RB
+
+
+RB
+	name upperBack1
+	mass 2.46
+	moi 0.003 0.002 0.003 0 0 0
+	position 0.000042 0.300396 -0.025756
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/upperBack1.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.000000 -0.300396 0.021773
+	mappingInfo -1 -1
+	CDP Capsule 0 -0.02 0 0 0.02 0 0.05		
+/End_RB
+
+
+RB
+	name upperBack2
+	mass 9.36
+	moi 0.03 0.09 0.1 0 0 0
+	position -0.000361 0.514463 -0.032705
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/upperBack2.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.000000 -0.514463 0.028722
+	mappingInfo -1 -1
+	CDP Box -0.15 -0.153159 -0.062258 0.15 0.04 0.12	
+/End_RB
+
+
+RB
+	name lUpperArm1
+	mass 2.624
+	moi 0.0008 0.0009 0.001024 0 -0.000000 -0.000000
+	position 0.197720 0.528663 -0.051656
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lUpperArm1.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 -0.197720 -0.528663 0.047673
+	mappingInfo -1 -1	
+/End_RB
+
+
+RB
+	name lUpperArm2
+	mass 3.28
+	moi 0.02146 0.00358 0.02242 0.0048 0.0005 -0.00206
+	position 0.269178 0.302806 -0.075136
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lUpperArm2.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 -0.269178 -0.302806 0.071153
+	mappingInfo -1 -1
+	CDP Capsule 0.01 -0.03 0 -0.03 0.17 0.02 0.05		
+/End_RB
+
+
+RB
+	name lLowerArm
+	mass 2.5
+	moi 0.014155 0.002185 0.014155 0.002888 -0.000703 0.003097
+	position 0.337376 0.016355 -0.033567
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/lLowerArm.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000	-0.337376 -0.016356 0.029584
+	mappingInfo -1 -1
+	CDP Capsule 0.0 -0.02 0 -0.03 0.17 -0.04 0.035	
+/End_RB
+
+
+RB
+	name head
+	mass 4.64
+	moi 0.00888 0.00324 0.00808 0.000000 0.000000 -0.00324
+	position 0.000019 0.710832 0.025302
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/head.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.000000 -0.710832 -0.029285
+	mappingInfo -1 -1
+	CDP Sphere 0 0 0 0.1
+/End_RB
+
+
+RB
+	name rUpperArm1
+	mass 2.624
+	moi 0.0008 0.0009 0.001024 0 -0.000000 -0.000000
+	position -0.197720 0.528663 -0.051656
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rUpperArm1.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.197720 -0.528663 0.047673
+	mappingInfo -1 -1
+/End_RB
+
+
+RB
+	name rUpperArm2
+	mass 3.28
+	moi 0.02146 0.00358 0.02242 -0.0048 -0.0005 -0.00206
+	position -0.269178 0.302806 -0.075136
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rUpperArm2.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000 0.269178 -0.302806 0.071153
+	mappingInfo -1 -1
+	CDP Capsule -0.01 -0.03 0 0.03 0.17 0.02 0.05	
+/End_RB
+
+
+RB
+	name rLowerArm
+	mass 2.5
+	moi 0.014155 0.002185 0.014155 -0.002888 0.000703 0.003097
+	position -0.337376 0.016356 -0.033566
+	orientation 0.000000 0.000000 0.000000 0.000000
+	velocity 0.000000 0.000000 0.000000
+	angularVelocity 0.000000 0.000000 0.000000
+	frictionCoefficient 0.800000
+	restitutionCoefficient 0.200000
+	thickness 0.1
+	mesh robots/bip/meshes/rLowerArm.obj
+	meshTransformation 1.000000 -0.000000 0.000000 0.000000	0.337376 -0.016356 0.029584
+	mappingInfo -1 -1
+	CDP Capsule 0.0 -0.02 0 0.03 0.17 -0.04 0.035	
+/End_RB
+
+
+	RBJoint
+		jointAxis 0.000000 -0.000000 -1.000000
+		dxlID -1
+		mappingInfo 0 2
+		name pelvis_rUpperLeg1
+		parent pelvis
+		child rUpperLeg1
+		jointCPos 0.031418 0.013015 0
+		jointPPos -0.077874 -0.028159 0.017315
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1 0 0
+		dxlID -1
+		mappingInfo 0 4
+		name rUpperLeg1_rUpperLeg2
+		parent rUpperLeg1
+		child rUpperLeg2
+		jointCPos -0.005758 0.091498 0.002062
+		jointPPos -0.009285 -0.007858 -0.000041
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0 1 0
+		dxlID -1
+		mappingInfo 0 6
+		name rUpperLeg2_rUpperLeg3
+		parent rUpperLeg2
+		child rUpperLeg3
+		jointCPos -0.003461 0.198249 -0.003967
+		jointPPos -0.002056 -0.029185 -0.000737
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1 0 0
+		dxlID -1
+		mappingInfo 0 8
+		name rUpperLeg3_rLowerLeg
+		parent rUpperLeg3
+		child rLowerLeg
+		jointCPos 0.000165 0.298361 0.039839
+		jointPPos 0.008854 -0.082951 0.001063
+		jointLimits -2.8 0	
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1 0 0
+		dxlID -1
+		mappingInfo 0 10
+		name rLowerLeg_rFoot1
+		parent rLowerLeg
+		child rFoot1
+		jointCPos -0.001329 0.017885 0.001788
+		jointPPos -0.000550 -0.104293 -0.013492
+		jointLimits -1 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0 0 -1
+		dxlID -1
+		mappingInfo 0 12
+		name rFoot1_rFoot2
+		parent rFoot1
+		child rFoot2
+		jointCPos 0.004695 0.054708 -0.023843
+		jointPPos 0.001313 -0.018023 -0.001123
+		jointLimits -1.0 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 0.000000 -1.000000
+		dxlID -1
+		mappingInfo 1 2
+		name pelvis_lUpperLeg1
+		parent pelvis
+		child lUpperLeg1
+		jointCPos -0.031418 0.013015 0
+		jointPPos 0.077874 -0.028159 0.017315
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 1 0 0
+		dxlID -1
+		mappingInfo 1 4
+		name lUpperLeg1_lUpperLeg2
+		parent lUpperLeg1
+		child lUpperLeg2
+		jointCPos 0.005758 0.091498 0.002062
+		jointPPos 0.009285 -0.007858 -0.000041
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0 1 0
+		dxlID -1
+		mappingInfo 1 6
+		name lUpperLeg2_lUpperLeg3
+		parent lUpperLeg2
+		child lUpperLeg3
+		jointCPos 0.003461 0.198249 -0.003967
+		jointPPos 0.002056 -0.029185 -0.000737
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 1 0 0
+		dxlID -1
+		mappingInfo 1 8
+		name lUpperLeg3_lLowerLeg
+		parent lUpperLeg3
+		child lLowerLeg
+		jointCPos -0.000165 0.298361 0.039839
+		jointPPos -0.008854 -0.082951 0.001063
+		jointLimits 0 2.8	
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 1 0 0
+		dxlID -1
+		mappingInfo 1 10
+		name lLowerLeg_lFoot1
+		parent lLowerLeg
+		child lFoot1
+		jointCPos 0.001329 0.017885 0.001788
+		jointPPos 0.000550 -0.104293 -0.013492
+		jointLimits -1.0 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0 0 -1
+		dxlID -1
+		mappingInfo 1 12
+		name lFoot1_lFoot2
+		parent lFoot1
+		child lFoot2
+		jointCPos -0.004577 0.052138 -0.023784
+		jointPPos -0.001313 -0.018023 -0.001123
+		jointLimits -1.0 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 1.000000 0.000000
+		dxlID -1
+		mappingInfo 2 2
+		name pelvis_lowerback1
+		parent pelvis
+		child lowerBack1
+		jointCPos 0.000000 -0.035500 0
+		jointPPos 0.000000 0.064576 -0.037258
+		jointLimits -0.5 0.5			
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 -0.000000 0.000000
+		dxlID -1
+		mappingInfo 2 4
+		name lowerBack1_lowerBack2
+		parent lowerBack1
+		child lowerBack2
+		jointCPos 0.000000 -0.097367 -0.002992
+		jointPPos 0.000000 0.024768 0.006427
+		jointLimits -0.5 0.5		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.000000 1.000000 0.00000
+		dxlID -1
+		mappingInfo 2 6
+		name lowerBack2_upperBack1
+		parent lowerBack2
+		child upperBack1
+		jointCPos -0.000000 -0.037789 0.005868
+		jointPPos -0.000000 0.031212 -0.003002
+		jointLimits -0.5 0.5		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1.000000 -0.000000 0.000002
+		dxlID -1
+		mappingInfo 2 8
+		name upperBack1_upperBack2
+		parent upperBack1
+		child upperBack2
+		jointCPos 0.0000 -0.187631 0.012807
+		jointPPos -0.0000 0.026436 0.005858
+		jointLimits -0.5 0.5	
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0 0 -1
+		dxlID -1
+		mappingInfo 2 13
+		name upperBack2_lUpperArm1
+		parent upperBack2
+		child lUpperArm1
+		jointCPos -0.049555 0.004556 -0.000500
+		jointPPos 0.148526 0.018756 -0.019451
+		jointLimits -1 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.956066 0.293112 -0.004898
+		dxlID -1
+		mappingInfo 2 15
+		name lUpperArm1_lUpperArm2
+		parent lUpperArm1
+		child lUpperArm2
+		jointCPos -0.055265 0.222151 0.023801
+		jointPPos 0.016193 -0.003706 0.000321
+		jointLimits -1 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0.977702 0.209996 -0.000144
+		dxlID -1
+		mappingInfo 2 17
+		name lUpperArm2_lLowerArm
+		parent lUpperArm2
+		child lLowerArm
+		jointCPos -0.049345 0.207497 -0.049524
+		jointPPos 0.018853 -0.078953 -0.007955
+		jointLimits -1 0		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -1 0 0
+		dxlID -1
+		mappingInfo 2 20
+		name upperBack2_head
+		parent upperBack2
+		child head
+		jointCPos -0.0000 -0.107572 -0.045199
+		jointPPos 0.000 0.088797 0.012808
+		jointLimits -1 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis 0 0 -1
+		dxlID -1
+		mappingInfo 2 24
+		name upperBack2_rUpperArm1
+		parent upperBack2
+		child rUpperArm1
+		jointCPos 0.049555 0.004556 -0.000500
+		jointPPos -0.147804 0.018756 -0.019451
+		jointLimits -1 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -0.956066 0.293110 -0.004897
+		dxlID -1
+		mappingInfo 2 26
+		name rUpperArm1_rUpperArm2
+		parent rUpperArm1
+		child rUpperArm2
+		jointCPos 0.055265 0.222151 0.023801
+		jointPPos -0.016193 -0.003706 0.000321
+		jointLimits -1 1		
+	/End_Joint
+
+
+	RBJoint
+		jointAxis -0.977703 0.209994 -0.000141
+		dxlID -1
+		mappingInfo 2 28
+		name rUpperArm2_rLowerArm
+		parent rUpperArm2
+		child rLowerArm
+		jointCPos 0.049345 0.207497 -0.049524
+		jointPPos -0.018853 -0.078953 -0.007953
+		jointLimits 0 1	
+	/End_Joint
+
+

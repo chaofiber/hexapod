@@ -1,0 +1,7 @@
+RB
+	name obstacle
+	collisionBox 0.000000 0.0000 0.000000 0.500000 0.500000 0.500000
+	frictionCoefficient 0.8
+	restitutionCoefficient 0.0
+	frozen
+/End_RB

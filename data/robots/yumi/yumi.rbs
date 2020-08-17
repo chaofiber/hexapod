@@ -1,0 +1,287 @@
+RB
+	name body
+	mesh robots/yumi/meshes/IRB14000_rev00_BASE.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 0.0 0.0 0.0
+	meshDescription body
+/End_RB
+
+
+# --- Right Arm ---
+RB
+	name link_1_r
+	#collisionSphere 0.0 0.0 0.0 0.07
+	mesh robots/yumi/meshes/IRB14000_rev00_Link1_R.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.076778 -0.453103 -0.084942
+	meshDescription link_1_r
+/End_RB
+
+	RBJoint
+		jointAxis 0.500595 0.289017 0.210388
+		jointLimits -2.9 2.9
+		name joint_body_link_1_r
+		parent body
+		child link_1_r
+		jointCPos -0.037878 -0.046644 -0.018593
+		jointPPos 0.038900 0.406459 0.066349
+	/End_Joint
+
+
+RB
+	name link_2_r
+	#collisionSphere 0.0 0.0 0.0 0.07
+	mesh robots/yumi/meshes/IRB14000_rev00_Link2_R.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.185025 -0.515599 -0.130436
+	meshDescription link_2_r
+/End_RB
+
+	RBJoint
+		jointAxis -0.935828 6.129759 -6.193931
+		jointLimits -2.45 0.7
+		name joint_link_1_2_r
+		parent link_1_r
+		child link_2_r
+		jointCPos -0.070369 -0.015853 -0.026900
+		jointPPos 0.037878 0.046644 0.018593
+	/End_Joint
+
+RB
+	name link_3_r
+	#collisionSphere 0.0 0.0 0.0 0.07
+	mesh robots/yumi/meshes/IRB14000_rev00_Link3_R.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.307677 -0.554516 -0.152806
+	meshDescription link_3_r
+/End_RB
+
+	RBJoint
+		jointAxis 0.500594 0.289018 0.210388
+		jointLimits -2.9 2.9
+		name joint_link_2_3_r
+		parent link_2_r
+		child link_3_r
+		jointCPos -0.052283 -0.023064 0.004530
+		jointPPos 0.070369 0.015853 0.026900
+	/End_Joint
+
+RB
+	name link_4_r
+	collisionSphere -0.0587426 0.0131113 0.0436092 0.094
+	mesh robots/yumi/meshes/IRB14000_rev00_Link4_R.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.419212 -0.538535 -0.120139
+	meshDescription link_4_r
+/End_RB
+
+	RBJoint
+		jointAxis -0.935810 6.129468 -6.193658
+		jointLimits -2.1 1.35
+		name joint_link_3_4_r
+		parent link_3_r
+		child link_4_r
+		jointCPos -0.059252 0.039046 0.028137
+		jointPPos 0.052283 0.023064 -0.004530
+	/End_Joint
+
+RB
+	name link_5_r
+	#collisionSphere 0.0 0.0 0.0 0.06
+	mesh robots/yumi/meshes/IRB14000_rev00_Link5_R.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.499889 -0.473664 -0.037029
+	meshDescription link_5_r
+/End_RB
+
+	RBJoint
+		jointAxis 0.973704 -0.918052 -1.055652
+		jointLimits -5.0 5.0
+		name joint_link_4_5_r
+		parent link_4_r
+		child link_5_r
+		jointCPos -0.021426 0.025826 0.054973
+		jointPPos 0.059252 -0.039046 -0.028137
+	/End_Joint
+
+RB
+	name link_6_r
+	#collisionSphere 0.0 0.0 0.0 0.06
+	mesh robots/yumi/meshes/IRB14000_rev00_Link6_R.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.535847 -0.439761 0.001956
+	meshDescription link_6_r
+/End_RB
+
+	RBJoint
+		jointAxis -0.935805 6.129355 -6.193550
+		jointLimits -1.5 2.35
+		name joint_link_5_6_r
+		parent link_5_r
+		child link_6_r
+		jointCPos -0.014533 0.008077 -0.015988
+		jointPPos 0.021426 -0.025826 -0.054973
+	/End_Joint
+
+RB
+	name link_7_r
+	#collisionSphere 0.0818941 -0.0768582 -0.0901082 0.02
+	collisionSphere 0.0304623 -0.0292584 -0.0325563 0.06
+	collisionSphere -0.0171573 0.0311676 0.00613496 0.088
+	mesh robots/yumi/meshes/IRB14000_rev00_Link7_R.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.558968 -0.423587 -0.004722
+	meshDescription link_7_r
+	mesh robots/yumi/meshes/IRB14000_GRIPPER_rev00_BASE.obj
+	meshTransformation 0.267567 -0.162689 0.882496 -0.350915 0.00888502 -0.00908031 -0.00943452
+	meshDescription gripper_base_r
+	mesh robots/yumi/meshes/IRB14000_GRIPPER_rev00_Tool1_Finger1.obj
+	meshTransformation 0.267567 -0.162689 0.882496 -0.350915 0.00888502 -0.00908031 -0.00943452
+	meshDescription gripper_finger1_r
+	mesh robots/yumi/meshes/IRB14000_GRIPPER_rev00_Tool1_Finger2.obj
+	meshTransformation 0.267567 -0.162689 0.882496 -0.350915 0.00888502 -0.00908031 -0.00943452
+	meshDescription gripper_finger2_r
+	bodyPointFeature 0.0600 -0.0566 -0.0651
+/End_RB
+
+	RBJoint
+		jointAxis 0.973698 -0.918049 -1.055650
+		jointLimits -3.95 3.95
+		name joint_link_6_7_r
+		parent link_6_r
+		child link_7_r
+		jointCPos -0.008588 0.008097 0.009311
+		jointPPos 0.014533 -0.008077 0.015988
+	/End_Joint
+
+
+# --- Left Arm ---
+RB
+	name link_1_l
+	#collisionSphere 0.0 0.0 0.0 0.07
+	mesh robots/yumi/meshes/IRB14000_rev00_Link1_L.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.080075 -0.431509 0.107512
+	meshDescription link_1_l
+/End_RB
+
+	RBJoint
+		jointAxis 0.500595 0.289017 -0.210388 
+		jointLimits -2.9 2.9
+		name joint_body_link_1_l
+		parent body
+		child link_1_l
+		jointCPos -0.041175 -0.025050 0.039663
+		jointPPos 0.038900 0.406459 -0.066349
+	/End_Joint
+
+RB
+	name link_2_l
+	#collisionSphere 0.0 0.0 0.0 0.07
+	mesh robots/yumi/meshes/IRB14000_rev00_Link2_L.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.188322 -0.494005 0.152256
+	meshDescription link_2_l
+/End_RB
+
+	RBJoint
+		jointAxis 0.082180 -0.538270 -0.543910
+		jointLimits -2.45 0.7
+		name joint_link_1_2_l
+		parent link_1_l
+		child link_2_l
+		jointCPos -0.067072 -0.037446 0.005081
+		jointPPos 0.041175 0.025050 -0.039663
+	/End_Joint
+
+RB
+	name link_3_l
+	#collisionSphere 0.0 0.0 0.0 0.07
+	mesh robots/yumi/meshes/IRB14000_rev00_Link3_L.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.310613 -0.535283 0.172241
+	meshDescription link_3_l
+/End_RB
+
+	RBJoint
+		jointAxis 0.864249 0.498974 -0.363224
+		jointLimits -2.9 2.9
+		name joint_link_2_3_l
+		parent link_2_l
+		child link_3_l
+		jointCPos -0.055219 -0.003831 0.014904
+		jointPPos 0.067072 0.037446 -0.005080
+	/End_Joint
+
+RB
+	name link_4_l
+	collisionSphere -0.0654396 0.030268 -0.020616 0.094
+	mesh robots/yumi/meshes/IRB14000_rev00_Link4_L.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.422148 -0.519302 0.139573
+	meshDescription link_4_l
+/End_RB
+
+	RBJoint
+		jointAxis 0.082180 -0.538270 -0.543910
+		jointLimits -2.1 1.35
+		name joint_link_3_4_l
+		parent link_3_l
+		child link_4_l
+		jointCPos -0.056315 0.019812 -0.047572
+		jointPPos 0.055219 0.003831 -0.014904
+	/End_Joint
+
+RB
+	name link_5_l
+	#collisionSphere 0.0 0.0 0.0 0.06
+	mesh robots/yumi/meshes/IRB14000_rev00_Link5_L.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.503840 -0.447786 0.063177
+	meshDescription link_5_l
+/End_RB
+
+	RBJoint
+		jointAxis 0.876181 -0.826103 0.949922
+		jointLimits -5.0 5.0
+		name joint_link_4_5_l
+		parent link_4_l
+		child link_5_l
+		jointCPos -0.025376 0.051704 -0.028824
+		jointPPos 0.056315 -0.019812 0.047572
+	/End_Joint
+
+RB
+	name link_6_l
+	#collisionSphere 0.0 0.0 0.0 0.06
+	mesh robots/yumi/meshes/IRB14000_rev00_Link6_L.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.539798 -0.413883 0.024193
+	meshDescription link_6_l
+/End_RB
+
+	RBJoint
+		jointAxis 0.082176 -0.538265 -0.543910
+		jointLimits -1.5 2.35
+		name joint_link_5_6_l
+		parent link_5_l
+		child link_6_l
+		jointCPos -0.010582 -0.017801 -0.010160
+		jointPPos 0.025376 -0.051704 0.028824
+	/End_Joint
+
+RB
+	name link_7_l
+	#collisionSphere 0.0818941 -0.0768582 0.0901082 0.02
+ 	collisionSphere 0.035417 -0.03158 0.0339246 0.06
+	collisionSphere -0.00699265 0.0168393 -0.0232607 0.088
+	mesh robots/yumi/meshes/IRB14000_rev00_Link7_L.obj
+	meshTransformation 0.70711 -0.70711 0.0 0.0 -0.558234 -0.424278 0.005517
+	meshDescription link_7_l
+	mesh robots/yumi/meshes/IRB14000_GRIPPER_rev00_BASE.obj
+	meshTransformation -0.161838 0.267871 -0.350816 0.8826 0.010336 -0.0088075 0.0105368
+	meshDescription gripper_base_l
+	mesh robots/yumi/meshes/IRB14000_GRIPPER_rev00_Tool1_Finger1.obj
+	meshTransformation -0.161838 0.267871 -0.350816 0.8826 0.010336 -0.0088075 0.0105368
+	meshDescription gripper_finger1_l
+	mesh robots/yumi/meshes/IRB14000_GRIPPER_rev00_Tool1_Finger2.obj
+	meshTransformation -0.161838 0.267871 -0.350816 0.8826 0.010336 -0.0088075 0.0105368
+	meshDescription gripper_finger2_l
+	bodyPointFeature 0.0600 -0.0566 0.0650
+/End_RB
+
+	RBJoint
+		jointAxis 0.876180 -0.826104 0.949924
+		jointLimits -3.95 3.95
+		name joint_link_6_7_l
+		parent link_6_l
+		child link_7_l
+		jointCPos -0.007855 0.007406 -0.008516
+		jointPPos 0.010582 0.017801 0.010160
+	/End_Joint

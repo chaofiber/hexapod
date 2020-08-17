@@ -1,0 +1,113 @@
+RB 
+	name base
+	mesh robots/ur5e/meshes/eSeries_UR5e_baseNoCable.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 0.0 0.0
+	meshDescription base
+/End_RB
+
+RB 
+	name link1
+	mesh robots/ur5e/meshes/eSeries_UR5e_link1.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 -0.1 0.0
+	meshDescription link1
+/End_RB
+
+	RBJoint
+		jointAxis 0.0 1 0.0
+		jointLimits -6.1 6.1
+		name joint01
+		parent base
+		child link1
+		jointCPos 0 0 0
+		jointPPos 0 0.1 0
+	/End_Joint
+
+RB 
+	name link2
+	mesh robots/ur5e/meshes/eSeries_UR5e_link2.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 -0.163 -0.076
+	meshDescription link2
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 1
+		jointLimits -6.1 6.1
+		name joint12
+		parent link1
+		child link2
+		jointCPos 0 0 0
+		jointPPos 0 0.063 0.076
+	/End_Joint
+
+RB 
+	name link3
+	mesh robots/ur5e/meshes/eSeries_UR5e_link3.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 -0.588 -0.076
+	meshDescription link3
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 1
+		jointLimits -6.1 6.1
+		name joint23
+		parent link2
+		child link3
+		jointCPos 0 0 0
+		jointPPos 0 0.425 0
+	/End_Joint
+
+RB 
+	name link4
+	mesh robots/ur5e/meshes/eSeries_UR5e_link4.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 -0.980 -0.050
+	meshDescription link4
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 1
+		jointLimits -6.1 6.1
+		name joint34
+		parent link3
+		child link4
+		jointCPos 0 0 0
+		jointPPos 0 0.392 -0.026
+	/End_Joint
+
+RB 
+	name link5
+	mesh robots/ur5e/meshes/eSeries_UR5e_link5.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 -1.025 -0.130
+	meshDescription link5
+/End_RB
+
+	RBJoint
+		jointAxis 0 1 0
+		jointLimits -6.1 6.1
+		name joint45
+		parent link4
+		child link5
+		jointCPos 0 0 0
+		jointPPos 0 0.045 0.080
+	/End_Joint
+
+RB 
+	name link6
+	mesh robots/ur5e/meshes/eSeries_UR5e_link6.obj
+	meshTransformation 1.0 0.0 0.0 0.0 0.0 -1.080 -0.180
+	meshDescription link6
+#	mesh robots/ur5e/meshes/Gripper-2F85-Offen.obj
+	mesh robots/ur5e/meshes/Gripper_2F_85_closed.obj
+	meshTransformation 0.5 0.5 0.5 0.5 0.0 0.0 0.050
+	meshDescription gripper
+	bodyPointFeature 0 0 0.14 0.0001
+/End_RB
+
+	RBJoint
+		jointAxis 0 0 1
+		jointLimits -6.1 6.1
+		name joint56
+		parent link5
+		child link6
+		jointCPos 0 0 0
+		jointPPos 0 0.055 0.050
+	/End_Joint
